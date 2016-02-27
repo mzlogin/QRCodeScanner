@@ -48,7 +48,7 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background: rgba(255,255,255,51);</string>
+     <string notr="true">background: rgba(255,255,255,0);</string>
     </property>
    </widget>
    <widget class="QPushButton" name="startScan">

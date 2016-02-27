@@ -18,6 +18,9 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->menuBar->hide();
     ui->mainToolBar->hide();
 
+    // TODO: implement responsibility layout and remove the below line
+    setFixedSize(width(), height());
+
     connect(ui->startScan, SIGNAL(clicked()), this, SLOT(startScan()));
 }
 
