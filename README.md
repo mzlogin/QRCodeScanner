@@ -1,5 +1,10 @@
 # QRCodeScanner
+
 A QRCode Scanner for Windows/Mac OS X/Linux in Qt.
+
+## Downloads
+
+https://github.com/mzlogin/QRCodeScanner/releases
 
 ## Screenshots
 
