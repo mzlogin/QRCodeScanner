@@ -11,6 +11,12 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 TARGET = QRCodeScanner
 TEMPLATE = app
 
+QMAKE_LFLAGS_DEBUG += -lQZXing_debug
+QMAKE_LFLAGS_RELEASE += -lQZXing
+
+QMAKE_LFLAGS += -liconv
+
+LIBS += -L../qzxing
 
 SOURCES += main.cpp\
         mainwindow.cpp

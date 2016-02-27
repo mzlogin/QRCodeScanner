@@ -1,0 +1,3 @@
+[submodule "qzxing"]
+	path = qzxing
+	url = git@github.com:mzlogin/qzxing.git

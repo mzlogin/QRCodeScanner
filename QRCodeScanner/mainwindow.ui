@@ -14,7 +14,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>二维码扫描</string>
+   <string>QRCode Scanner</string>
   </property>
   <property name="statusTip">
    <string/>
@@ -61,7 +61,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>开始扫描</string>
+     <string>Start Scan</string>
     </property>
    </widget>
   </widget>

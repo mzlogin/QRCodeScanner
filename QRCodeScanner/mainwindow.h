@@ -16,10 +16,16 @@ public:
     ~MainWindow();
 
 private slots:
+    void tryScan();
+
+private:
     void startScan();
+    void resetState();
 
 private:
     Ui::MainWindow *ui;
+
+    bool mIsWait;
 };
 
 #endif // MAINWINDOW_H
