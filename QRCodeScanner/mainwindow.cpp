@@ -7,6 +7,12 @@
 #include <QImage>
 #include "../qzxing/qzxing.h"
 
+#ifndef Q_OS_WIN32
+#define TMP_FILE_PATH "/tmp/qrcode-scanner-tmp.jpg"
+#else
+#define TMP_FILE_PATH "qrcode-scanner-tmp.jpg"
+#endif
+
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow),
@@ -50,7 +56,7 @@ void MainWindow::startScan()
     int w = this->width() / screen->devicePixelRatio();
     int h = this->height() / screen->devicePixelRatio();
 
-    const QString& tmp = "tmp.jpg";
+    const QString& tmp = TMP_FILE_PATH;
     const char* fmt = "JPG";
 
     QPixmap pixmap = screen->grabWindow(QApplication::desktop()->winId(), x, y, w, h);
